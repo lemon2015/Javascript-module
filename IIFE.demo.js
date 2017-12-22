@@ -32,7 +32,7 @@ var Module = (function(){
 // Module.func2();
 
 /**
- * Loose augmentation mode (宽放大模式)
+ * Loose augmentation mode 
  * We can use the loose magnification mode to achieve module inheritance(similar to extends in php).
  *
  */
