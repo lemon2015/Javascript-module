@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CMD demo</title>
+</head>
+<body>
+<h1>Hello,CMD!</h1>
+<div id="container">click me to toggle</div>
+<div id="test" style="display:none">i am here!</div>
+<!--use defer for ie or async for other to load require.js-->
+<script type="text/javascript" src="sea.js"></script>
+<script>
+    seajs.config({
+//        base: "./",
+        alias: {
+            "jquery": "jquery-3.2.1.min.js"
+        },
+        debug:true
+    });
+
+    seajs.use("cmd.main");
+</script>
+</body>
+</html>
