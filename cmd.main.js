@@ -6,4 +6,11 @@ define(function(require) {
     $('#container').click(function(){
         a.show();
     });
+
+    var Test1 = require('./jquery.extend');
+
+    var b = new Test1('#checkbox');
+    $('#checkbox').click(function(){
+        b.show();
+    });
 });
