@@ -1,5 +1,7 @@
 define(function(require) {
     var $ = require('jquery');
+    var store = require('store');
+    debugger;
     var Test = require('./cmd.test');
     var a = new Test('#test');
     // a.show();

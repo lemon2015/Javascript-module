@@ -29,3 +29,14 @@ define(function(require,exports,module) {
     }
     module.exports = Test2;
 });
+
+
+var test = function(){
+    this.a = 1;
+};
+test.prototype = function(){
+    var add = function(a,b){return a+b;};
+    return {add:add}
+}();
+var a = new test();
+a.add(2,3);
