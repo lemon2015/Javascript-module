@@ -10,14 +10,20 @@
     	mouse over for seconds and you can see it!
     </span>
 </div>
-<script src="vue.js"></script>
+<script type="text/javascript" src="sea.js"></script>
 <script>
-	var app2 = new Vue({
-		el:'#app-2',
-		data:{
-			message:'page loading '+new Date().toLocaleString()
-		}
-	});
+    seajs.config({
+        base: "./",
+        alias: {
+            "jquery": "jquery-3.2.1.min.js",
+            'store':'store.everything.min.js',
+            'vue':'vue.js',
+            'vue-router':'vue-router.js',
+        },
+        debug:true
+    });
+
+    seajs.use("vue-main");
 </script>
 </body>
 </html>
